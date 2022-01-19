@@ -1,0 +1,8 @@
+#Private Node Modules
+node_modules/
+
+#Mac/OSX
+.DS_Store
+
+#Private Files
+*.json
