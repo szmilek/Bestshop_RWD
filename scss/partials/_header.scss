@@ -1,0 +1,47 @@
+
+.header {
+  height: 70px;
+  box-shadow: 0 3px 6px #00000029;
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+
+    .header__logo {
+      font-family: $font-raleway;
+      font-size: 2rem;
+      font-weight: 300;
+      color: $color-primary;
+    }
+
+    .header__nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      &__link {
+        font-family: $font-open-sans;
+        font-weight: 700;
+        font-size: 0.6875rem;
+        text-align: center;
+        line-height: 15px;
+        text-transform: uppercase;
+        letter-spacing: 3.28px;
+        text-decoration: none;
+        color: $color-secondary-font;
+        padding: 28px 10px 23px;
+        margin: 37px;
+        list-style-type: none;
+
+        &:hover {
+          color: $color-primary-font;
+          border-bottom: 4px solid $color-primary;
+          box-sizing: content-box;
+        }
+      }
+    }
+  }
+
+}

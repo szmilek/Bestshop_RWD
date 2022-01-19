@@ -1,4 +1,10 @@
 
+//Settings
+
+@import "settings/_mixins";
+@import "settings/_functions";
+@import "settings/_variables";
+
 //Generic
 
 @import "generic/_base";
@@ -14,11 +20,7 @@
 @import "partials/_pricing";
 @import "partials/_statistics";
 
-//Settings
 
-@import "settings/_mixins";
-@import "settings/_functions";
-@import "settings/_variables";
 
 
 
