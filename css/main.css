@@ -1,30 +1,3 @@
-* {
-  box-sizing: border-box;
-}
-
-body {
-  font-family: "Open Sans", sans-serif;
-}
-
-a {
-  text-decoration: none;
-}
-
-.container {
-  width: 1352px;
-  margin: 0 auto;
-}
-@media (max-width: 1352px) {
-  .container {
-    width: 100%;
-    padding: 0 15px;
-  }
-}
-
-ul, li {
-  list-style-type: none;
-}
-
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0-modified | 20110126
    License: none (public domain)
@@ -387,6 +360,57 @@ textarea {
   padding: 0.2em 0;
 }
 
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 1352px;
+  margin: 0 auto;
+}
+@media (max-width: 1352px) {
+  .container {
+    width: 100%;
+    padding: 0 15px;
+  }
+}
+
+ul, li {
+  list-style-type: none;
+}
+
+.btn {
+  color: #FFFFFF;
+  font-weight: 700;
+  display: inline-block;
+  text-decoration: none;
+  line-height: 1.375rem;
+  border-radius: 35px;
+  box-shadow: 5px 10px 14px #07ACE629;
+  padding: 22px 65px;
+  white-space: nowrap;
+}
+.btn--primary {
+  background-color: #08A6E4;
+}
+.btn--redish {
+  background-color: #FB3B64;
+}
+.btn--green {
+  background-color: #55DFB4;
+}
+.btn--large {
+  padding: 22px 155px;
+}
+
 .header {
   height: 70px;
   box-shadow: 0 3px 6px #00000029;
@@ -460,6 +484,12 @@ textarea {
 @media (max-width: 792px) {
   .menu__btn:checked ~ .header__nav {
     display: flex;
+    align-items: flex-start;
+  }
+  .menu__btn:checked ~ .header__nav .header__nav__link {
+    padding: 14px 0 14px 25px;
+    margin: 0;
+    border: none;
   }
   .menu__btn:checked ~ .menu__toggle span:nth-child(1) {
     transform: rotate(45deg) translate(2px, 5px);
@@ -488,6 +518,46 @@ textarea {
 @media (max-width: 792px) {
   .menu__toggle {
     display: block;
+  }
+}
+
+.opening {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.opening__heading {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 3.6875rem;
+  margin: 120px 0 20px 0;
+}
+@media (max-width: 792px) {
+  .opening__heading {
+    margin-top: 100px;
+  }
+}
+.opening__description {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  text-align: center;
+  line-height: 1.375rem;
+  margin: 20px 0 38px 0;
+  padding: 0 70px;
+}
+.opening__bg__image {
+  width: 100%;
+  height: auto;
+}
+@media (max-width: 792px) {
+  .opening__bg__image {
+    width: 220%;
+  }
+}
+@media (max-width: 792px) {
+  .opening .btn {
+    padding: 16px 92px;
   }
 }
 /*# sourceMappingURL=main.css.map */

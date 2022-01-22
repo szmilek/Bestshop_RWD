@@ -1,0 +1,27 @@
+.btn {
+  color: $color-primary-bg;
+  font-weight: 700;
+  display: inline-block;
+  text-decoration: none;
+  line-height: 1.375rem;
+  border-radius: $button-radius;
+  box-shadow: 5px 10px 14px #07ACE629;
+  padding: 22px 65px;
+  white-space: nowrap;
+
+  &--primary {
+    background-color: $color-primary;
+  }
+
+  &--redish {
+    background-color: $color-redish;
+  }
+
+  &--green {
+    background-color: $color-green;
+  }
+
+  &--large {
+    padding: 22px 155px;
+  }
+}

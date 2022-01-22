@@ -7,16 +7,20 @@
 
 //Generic
 
-@import "generic/_base";
 @import "generic/_reset";
+@import "generic/_base";
+
+//Elements
+
+@import "elements/_buttons";
 
 //Partials
 
+@import "partials/_header";
+@import "partials/_opening";
 @import "partials/_benefits";
 @import "partials/_contact";
 @import "partials/_footer";
-@import "partials/_header";
-@import "partials/_opening";
 @import "partials/_pricing";
 @import "partials/_statistics";
 
