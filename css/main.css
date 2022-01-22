@@ -526,6 +526,7 @@ ul, li {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 .opening__heading {
   font-family: "Raleway", sans-serif;
@@ -559,5 +560,98 @@ ul, li {
   .opening .btn {
     padding: 16px 92px;
   }
+}
+
+.statistics__heading {
+  font-size: 2.25rem;
+  line-height: 2.625rem;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  padding: 100px 0;
+}
+@media (max-width: 792px) {
+  .statistics__heading {
+    padding: 60px 35px;
+  }
+}
+.statistics__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 100px 120px 100px;
+}
+@media (max-width: 792px) {
+  .statistics__container {
+    flex-direction: column;
+  }
+}
+.statistics__container .statistics__section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+@media (max-width: 792px) {
+  .statistics__container .statistics__section {
+    padding: 20px 0;
+  }
+}
+.statistics__container .statistics__section div.red::after {
+  content: url("../../Assets/Person.svg");
+  height: 52px;
+  width: 44px;
+  position: relative;
+  left: 20px;
+  top: 4px;
+}
+.statistics__container .statistics__section div.blue::after {
+  content: url("../../Assets/Eye.svg");
+  height: 52px;
+  width: 44px;
+  position: relative;
+  left: 20px;
+  top: 15px;
+}
+.statistics__container .statistics__section div.green::after {
+  content: url("../../Assets/Catalog.svg");
+  height: 52px;
+  width: 44px;
+  position: relative;
+  left: 25px;
+  top: 5px;
+}
+.statistics__container .circle {
+  height: 62.71px;
+  width: 62.71px;
+  border-radius: 50%;
+  align-self: center;
+  margin-bottom: 14px;
+}
+.statistics__container .red {
+  background-color: #FB3B64;
+}
+.statistics__container .blue {
+  background-color: #08A6E4;
+}
+.statistics__container .green {
+  background-color: #55DFB4;
+}
+.statistics__container .statistics__number {
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  text-align: center;
+  letter-spacing: 5.96px;
+  font-family: var(--raleway-font);
+  font-weight: 800;
+  padding-bottom: 19.11px;
+}
+.statistics__container .statistics__description {
+  font-size: 1.0625rem;
+  line-height: 1.25rem;
+  text-align: center;
+  font-weight: 400;
+  color: #A5A5A5;
 }
 /*# sourceMappingURL=main.css.map */
