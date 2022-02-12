@@ -1,0 +1,37 @@
+.footer {
+  box-shadow: 0 -5px 40px #00000029;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 137px;
+
+  @include tablet {
+    padding: 20px 50px;
+  }
+
+  &__logo {
+    font-size: 1.625rem;
+    font-family: $font-raleway;
+    color: $color-primary;
+    line-height: 30px;
+    font-weight: 300;
+  }
+
+  &__copyrights {
+    font-size: 0.6875rem;
+    color: $color-secondary-font;
+    line-height: 15px;
+    font-weight: 400;
+    margin-top: 7px;
+  }
+
+  &__icons {
+    display: flex;
+    align-items: center;
+  }
+
+  a {
+    margin-left: 20px;
+    width: 24px;
+    height: 24px;
+  }
+}

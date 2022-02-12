@@ -1,0 +1,137 @@
+.contact {
+
+  &__container {
+    display: flex;
+    justify-content: center;
+    padding: 0 100px 50px 100px;
+
+    @include tablet {
+      flex-direction: column;
+      align-items: center;
+      padding: 30px;
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+
+    @include tablet {
+      width: 100%;
+    }
+  }
+
+  &__heading {
+    font-family: $font-raleway;
+    font-size: 3.0625rem;
+    padding-bottom: 22px;
+  }
+
+  &__details {
+    display: flex;
+    justify-content: flex-start;
+
+    @include tablet {
+      flex-direction: column;
+    }
+  }
+
+  &__description, &__number, &__email {
+    font-family: $font-open-sans;
+    font-size: 1rem;
+    line-height: 1.375rem;
+    text-decoration: none;
+    padding-bottom: 42px;
+  }
+}
+
+.contact__number,
+.contact__email {
+  color: $color-secondary-font;
+  padding-right: 15px;
+
+  @include tablet {
+    padding-bottom: 20px;
+  }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+
+  @include tablet {
+    padding-top: 20px;
+  }
+
+  &__fields {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__label {
+    font-size: 0.6875rem;
+    color: $color-primary;
+    font-weight: 700;
+    line-height: 15px;
+    letter-spacing: 3.28px;
+  }
+
+  &__name, &__email {
+    border: none;
+    border-bottom: 1px solid $color-secondary-font;
+    line-height: 35px;
+    margin-bottom: 42px;
+  }
+}
+
+.checkbox {
+  cursor: pointer;
+  display: flex;
+
+  input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+
+    &:checked + span {
+      background-image: url("../../Assets/Checkmark.svg");
+      background-size: 12px;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+
+  span {
+    height: 22px;
+    width: 22px;
+    flex-shrink: 0;
+    flex-basis: 22px;
+    border: 1px solid #D1D1D1;
+    cursor: pointer;
+    margin-right: 15px;
+    border-radius: 5px;
+  }
+
+  &__label {
+    font-size: 0.75rem;
+    color: #707070;
+    line-height: 17px;
+  }
+}
+
+.form__btn {
+  font-family: $font-open-sans;
+  font-weight: 700;
+  font-size: 0.8125rem;
+  background-color: $color-primary;
+  color: $color-primary-bg;
+  text-decoration: none;
+  border: none;
+  padding: 20px 97px;
+  border-radius: 35px;
+  align-self: flex-end;
+  margin-top: 20px
+}
